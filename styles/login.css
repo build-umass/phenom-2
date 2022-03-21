@@ -1,0 +1,21 @@
+.login-page {
+  height: 100vh;
+}
+
+.header {
+  height: 10vh;
+  border: 1px solid red;
+}
+
+.login-box {
+  height: 50vh;
+  width: 35vw;
+  margin: auto;
+  border: 1px solid black;
+  margin-top: 125px;
+  border-radius: 20px;
+}
+
+.title {
+  margin-left: 5px;
+}

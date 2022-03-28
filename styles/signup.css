@@ -1,10 +1,6 @@
-.login-page {
+.signup-page {
   height: 100vh;
   background-color: #e3bdef;
-  color: #755a7d;
-}
-
-.forms {
   color: #755a7d;
 }
 
@@ -14,9 +10,17 @@
   margin-left: 10px;
 }
 
-.login-box {
-  height: 50vh;
-  width: 30vw;
+.line {
+  color: white;
+  background-color: white;
+  height: 2px;
+  border-width: 0;
+  width: 150px;
+}
+
+.signup-box {
+  height: 450px;
+  width: 450px;
   margin: auto;
   border: 1px solid black;
   margin-top: 75px;
@@ -25,12 +29,12 @@
 
 .title {
   margin-left: 5px;
+  width: 80%;
 }
 
-.form-text {
-  background-color: #e2e2e2;
-  height: 5vh;
-  color: white;
+.email-pass {
+  width: 90%;
+  margin: auto;
 }
 
 .click-options {
@@ -39,7 +43,7 @@
 
 .option {
   margin: 0;
-  margin-left: 13%;
+  margin-left: 20px;
 }
 
 .submit {
@@ -53,12 +57,4 @@
   background-color: #e3bdef;
   border: none;
   color: white;
-}
-
-.line {
-  color: white;
-  background-color: white;
-  height: 2px;
-  border-width: 0;
-  width: 150px;
 }

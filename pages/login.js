@@ -6,24 +6,35 @@ import clientPromise from '../lib/mongodb'
 export default function Login({ isConnected }) {
     return (
         <div className='login-page'>
-            <div className='header'>
-                <div className='logo'></div>
-                <div className='line'></div>
+            <div className='header ml-3'>
+                <div className='logo'>
+                  <Image src='/../public/phenomsmallwhite.webp' alt='hi' width={100} height={100}></Image>
+                </div>
+                <div className='line'>
+                  <hr className='line'></hr>
+                </div>
             </div>
-            <div className='login-box'>
+            <div className='login-box bg-white'>
                 <div className='title'>
-                    <h1>Login</h1>
+                    <h1 className='px-3 pt-1'>Login</h1>
                 </div>
-                <div className='forms d-flex flex-column'>
-                    <label htmlFor="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required></input>
+                <form>
+                  <div className='forms d-flex flex-column w-75 m-auto mt-5'>
+                      <label className='form-title' htmlFor="email"><b><h5 className='m-0'>Email</h5></b></label>
+                      <input className='form-text mb-2' type="text" name="email" required></input>
 
-                    <label htmlFor="password"><b>Password</b></label>
-                    <input type="text" placeholder="Enter Password" name="password" required></input>
-                </div>
-                <div className='click-options'></div>
-                <div className='submit'></div>
-            </div>
+                      <label className='form-title' htmlFor="password"><b><h5 className='m-0'>Password</h5></b></label>
+                      <input className='form-text' type="text" name="password" required></input>
+                  </div>
+                  <div className='click-options mt-1'>
+                    <p className='option fw-lighter'>Forget Password</p>
+                    <p className='option fw-lighter'>Sign Up</p>
+                  </div>
+                  <div className='submit text-white m-auto mt-4 d-flex d-flex justify-content-center align-items-center'>
+                    <input className='submit-button bg-none' type="submit" value="Submit"></input>
+                  </div>
+                </form>
+              </div>
         </div>
     )
 }

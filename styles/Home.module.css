@@ -84,6 +84,17 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
 }
+.createCard {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  max-width: 800px;
+}
 
 .card:hover,
 .card:focus,
@@ -92,7 +103,33 @@
   border-color: #0070f3;
 }
 
-.card h2 {
+.createPageButton{
+  background-color: rgb(107, 7, 107);
+  color: white;
+}
+
+.createPageButton:hover{
+  background-color: rgb(175, 15, 175);
+  color:white;
+}
+
+.createCard h1 {
+  color: rgb(107, 7, 107);
+}
+
+.supporterLink {
+  color: rgb(107, 7, 107);
+  font-size: large;
+  line-height: normal;
+}
+
+.imageSelected {
+  -webkit-box-shadow:inset 0px 0px 0px 3px rgb(107, 7, 107);
+  -moz-box-shadow:inset 0px 0px 0px 3px rgb(107, 7, 107);
+  box-shadow:inset 0px 0px 0px 3px rgb(107, 7, 107);
+}
+
+.card, .createCard h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }

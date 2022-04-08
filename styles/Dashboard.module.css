@@ -1,44 +1,138 @@
 .container {
-  background-color: #c69ed3;
   display: flex;
-  padding: 0 2rem;
+  flex-direction: column;
+  /*TODO: better background? Image like on PHENOM homepage?*/
+  background-color: #c69ed3; 
+  padding: 10px 50px 10px 50px;
   height: 100vh;
   width: 100vw;
 }
 
+.main {
+  margin: 20px 0 0 0;
+}
+
 .header {
   display: flex;
-  align-self: start;
   align-items: center;
   justify-content: center;
-  margin: 25px 0 25px 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .headerBar {
-  background-color: #fff;
+  display:flex;
+  flex: 1;
+  background-color: white;
   border-radius: 10px;
-  margin-left: 25px;
-  width: 85vw;
-  height:10vh;
+  margin: 0 25px 0 25px;
+  padding: 0 25px 0 25px;
+  height:8vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  margin: 50px -50px -10px -50px;
+  background: #6e386e;
+  border: solid black 2px;
+}
+
+.link {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #ae86bb;
+  margin-left: auto;
+}
+
+.link:hover {
+  color: #af22de;
+}
+
+.headerText {
+  font-size: 2.5rem;
+  color: #6b076b;
+  font-weight: 700;
+}
+
+.smallHeaderText {
+  font-size: 2rem;
+  font-weight: 650;
+  color: #6b076b;
+}
+
+.text {
+  font-size: 1.25rem;
 }
 
 .milestoneTracker {
-
+  display:flex;
+  align-self:flex-end;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 ;
+  padding: 0 0 0 25px;
+  margin: 0 46px 0 25px; /*TODO: fix this margin*/
+  height:8vh;
+  align-items: center;
 }
 
-#progressBar {
-
+.image {
+  margin: auto;
+  flex: 1;
 }
 
 .profileCard {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   border-radius: 10px;
-  margin-left: 25px;
+  margin: 10px 25px 0 25px;
+  padding: 10px 15px 10px 15px;
   width: 30vw;
-  height:30vh;
-  border: solid orange
+  height:60vh;
 }
 
-.volunteerList {
+.cardBanner {
+  flex: 1;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  background: #6d166d;
+}
 
+.cardRow {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.bannerText {
+  font-size: 2rem;
+  color:#fff;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4f4d4d; /* this will probably change with status */
+}
+
+.statusTag {
+  display: flex;
+  margin: 0 15px 0 15px;
+  padding: 7px 10px 0 10px;
+  border-radius: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(129, 199, 129); /* this will probably change with status */
+}
+
+.tagText {
+  font-size: 0.8rem;
+  color: white;
 }

@@ -67,6 +67,33 @@ function getDistrict() {
 	}
 }
 
+// function for table debugging purposes
+function getRow() {
+	return {
+		name: "Jane Smith",
+		phone: "555-555-5555",
+		email: "someemail@email.com",
+		district: "4"
+	}
+}
+
+function generateRows() {
+	let rows = [];
+	// 5 will be replaced by number of volunteers
+	for (let i = 0; i < 8; ++i) {
+		let row = getRow();
+		rows.push(
+			<tr>
+				<th scope="row">{row.name}</th>
+				<td>{row.phone}</td>
+				<td>{row.email}</td>
+				<td>{row.district}</td>
+			</tr>
+		)
+	}
+	return rows;
+}
+
 // https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props
 export async function getServerSideProps(context) {
   try {
@@ -201,7 +228,18 @@ export default function Dashboard({ isConnected }) {
 						</div>
 					</div>
 					<div className={styles.volunteerCard}>
-
+						<h2 className={styles.smallHeaderText}>Your Volunteer List</h2>
+						<table className="table" style={{color: "#6b076b"}}>
+							<tbody>
+								<tr>
+									<th scope="col">Name</th>
+									<th scope="col">Phone</th>
+									<th scope="col">Email</th>
+									<th scope="col">House District</th>
+								</tr>
+								{generateRows()}
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</main>

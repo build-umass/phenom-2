@@ -51,6 +51,7 @@ export default function Home({ isConnected }) {
         </p>
 
         <a href='./create'>Go to Create page</a>
+        <a href='./join'>Go to join page</a>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

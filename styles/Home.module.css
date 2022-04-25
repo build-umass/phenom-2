@@ -145,6 +145,16 @@
   margin-left: 0.5rem;
 }
 
+.invalid {
+  border-color:  red !important;
+}
+
+.invalid:focus {
+  border-color: red;
+  /* box-shadow: none; */
+  box-shadow: 0 0 5px red;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

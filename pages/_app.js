@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps }) {
     import("bootstrap/dist/js/bootstrap");
   }, []);
 
-  // return <Component {...pageProps} />
-  return <Signup />
+  return <Component {...pageProps} />
+  // return <Signup />
 }
 
 export default MyApp

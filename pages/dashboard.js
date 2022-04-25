@@ -225,12 +225,11 @@ export default function Dashboard({ isConnected }) {
 					</div>
 				</div>
 			</main>
-
-			{/* <footer className={styles.footer}>
+			<footer className={styles.footer}>
 				<div className={styles.imageWrapper}>
 					<Image className={styles.image} src="/phenomsmallwhite.webp" width="105" height="78" alt="PHENOM Logo" />
 				</div>
-			</footer> */}
+			</footer>
 		</div>
 	);
 }

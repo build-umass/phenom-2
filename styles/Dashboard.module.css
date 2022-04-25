@@ -1,0 +1,191 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /*TODO: better background? Image like on PHENOM homepage?*/
+  background-color: #c69ed3; 
+  /* padding: 25px 50px 0px 50px; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  margin: 20px 0 0 0;
+  padding: 0px 50px 20px 50px;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 50px 10px 50px;
+}
+
+.headerBar {
+  display:flex;
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 25px 0 25px;
+  height:8vh;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  /* margin: 0px -50px 0px -50px; */
+  background: #6e386e;
+  border: solid black 2px;
+}
+
+.link {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #ae86bb;
+  margin-left: auto;
+}
+
+.link:hover {
+  color: #af22de;
+}
+
+.headerText {
+  font-size: 2.5rem;
+  color: #6b076b;
+  font-weight: 700;
+}
+
+.smallHeaderText {
+  font-size: 2rem;
+  font-weight: 650;
+  color: #6b076b;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #6b076b;
+}
+
+.subText {
+  font-size: 1rem;
+  color: #6b076b;
+}
+
+.imageWrapper {
+  margin-left: 45px;
+}
+
+.milestoneTracker {
+  display:flex;
+  /* align-self:flex-start; */
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 0 0 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  height:8vh;
+  align-items: center;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+}
+
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  /* margin: 10px 25px 0 25px; */
+  padding: 10px 15px 10px 15px;
+  width: 30vw;
+  /* height: 60vh; */
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+}
+
+.cardBanner {
+  align-content: center;
+  border-radius: 10px;
+  padding: 5px 10px 0 10px;
+  margin-bottom: 8px;
+  background: #6d166d;
+}
+
+.cardRow {
+  display: flex;
+  /* flex: 1; */
+}
+
+.verticalGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.volunteerCard {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  padding: 10px 15px 10px 15px;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+}
+
+.bannerText {
+  font-size: 2rem;
+  color:#fff;
+}
+
+.tag {
+  display: flex;
+  margin: 0 10px 0 10px;
+  padding: 7px 10px 0 10px;
+  border-radius: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  align-self:center
+}
+
+.tagText {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.verticalWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1
+}
+
+/* Special table styles */
+.fixedHeader {
+  width: 100%;
+  height: 100%;
+  /* table-layout: fixed; */
+  /* border-collapse: collapse; */
+}
+.fixedHeader tbody {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+}
+.fixedHeader thead tr {
+  display: block;
+}
+.fixedHeader thead {
+  color: #6b076b;
+}
+.fixedHeader th,
+.fixedHeader td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+  color: #6b076b;
+  border: solid rgb(224, 224, 224);
+}
